@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Optical Illusions</title>
+	<script src="JSShapeFunctions.js"></script>
+	<script src="Illusions.js"></script>
+	<style>
+		body {
+			margin: 5em;
+			margin-top: 0;
+		}
+		h1 {
+			text-align: center;
+		}
+		p {
+			text-align: justify;
+			font-family: "Menlo", "Lucida Sans Typewriter", "Andale Mono", "Courier New", "Courier", monospace;
+			font-style: normal;
+			font-size: 0.9em;
+		}
+		canvas {
+			 display: block;
+	 		 margin: auto;
+			 border: solid 1px black;
+		}
+	</style>
+</head>
+<body onload="MüllerLyer(); Kindergarten(); SubjectiveHeart(); Hermann(); Scintillating();">
+	<h1>Müller-Lyer Illusion</h1>
+	<p>One of the simplest examples of graphical optical illusions is the <b><i>Müller-Lyer illusion,</i></b> named after the German sociologist Franz Karl Müller-Lyer, who first described the effect in 1889. In one of its more common forms, the Müller-Lyer illusion asks the viewer which of the two horizontal lines is longer in the following figure:</p><br />
+	<canvas id="MüllerLyerCanvas" width="500" height="200"></canvas>
+	<p>Most people are convinced that the bottom line is longer, but the two lines are in fact the same length.</p>
+
+	<h1>Kindergarten Illusion</h1>
+	<p>An even more exotic illusion is the <b><i>kindergarten illusion</i></b> (also called the <b><i>café wall illusion</i></b>), which was first described by American psychologist Arthur Henry Pierce in 1898. In this illusion, shifting the squares on each row of a checkerboard pattern makes the horizontal lines appear slanted instead of straight.</p>
+	<p>The kindergarten illusion starts off very much like a checkerboard. The top row (row 0) consists of alternating white and black squares. Each subsequent row is then offset from the previous one in a pattern that shifts back and forth as one moves down the screen.</p> 
+	<p>Here is what the kindergarten illusion looks like when the square size is 35 pixels and the value of X_OFFSET is 27 pixels:</p><br />
+	<canvas id="KindergartenCanvas" width=280 height=280 style="border: solid gray 1px;"></canvas>
+
+	<h1>Subjective Hearts</h1>
+	<p>A <b><i>subjective contour</i></b>, also called an <b><i>illusory contour</i></b>, is a border of a shape perceived in an image as a result of the inference of the observer. The shape seems to jump out from (and appear substantially whiter than) the background. The following figure is an illusory heart:</p><br />
+	<canvas id="SubjectiveHeartCanvas" width=300 height=300></canvas>
+
+	<h1>Free-style: Grid Illusions</h1>
+	<p>A <b><i>grid illusion</i></b> is <a href="https://en.wikipedia.org/wiki/Grid_illusion">any kind of grid that deceives a person's vision</a>. The two most common types are the <b><i>Hermann grid illusion</i></b> and the <b><i>scintillating grid illusion</i></b>.</p>
+	<p><b><i>The Hermann grid</i></b> is an optical illusion reported by German physiologist Ludimar Hermann in 1870. &ldquo;Ghostlike&rdquo; gray blobs seem to appear at the intersections of a white grid on a black background, but disappear when you look directly at them, as in the figure below:</p><br />
+	<canvas id="HermannCanvas" width="600" height="300"></canvas>
+
+	<p>The <b><i>scintillating grid illusion</i></b> is an optical illusion discovered by E. and B. Lingelbach and M. Schrauf in 1994. White dots are superimposed on the intersections of a grid of gray bars on a black background. Dark dots seem to appear and disappear rapidly and at random (hence &ldquo;scintillating&rdquo;):</p><br />
+	<canvas id="ScintillatingCanvas" width="400" height="400"></canvas>
+	<p>Though they seem similar, there is a difference between these two graph illusions. The most distinguishing difference is, of course, that the scintillating grid is a modified Hermann grid, with non&ndash;illusory dots at the intersections.</p>
+	<p>There are several interesting similarities between the two types of graphs. For example, the dot effect is reduced (but not entirely removed) in both if the viewer tilts their head about 45 degrees, and similarly if the viewer gets very close or very far away from the image. A dot won&rsquo;t appear in either if the viewer looks directly at one particular intersection.</p>
+</body>
+</html>
